@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +26,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.input-area {
+  @apply flex flex-col gap-2 mb-8;
+}
+
+.input-style {
+  @apply border rounded-lg border-custom-white-200 p-4 text-base;
+}
+
+.span-error {
+  @apply text-custom-red-100 text-xs;
 }
