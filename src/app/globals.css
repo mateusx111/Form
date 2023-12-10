@@ -4,18 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,11 +21,11 @@ body {
 }
 
 .input-area {
-  @apply flex flex-col gap-2 mb-8;
+  @apply flex flex-col gap-2  w-[564px];
 }
 
 .input-style {
-  @apply border rounded-lg border-custom-white-200 p-4 text-base;
+  @apply border rounded-lg border-custom-white-200 focus:outline-custom-purple-200 p-4 font-normal text-custom-white-100 focus:text-custom-white-300 text-base;
 }
 
 .span-error {

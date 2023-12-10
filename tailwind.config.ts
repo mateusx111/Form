@@ -15,9 +15,13 @@ const config: Config = {
         "custom-white": {
           100: "#666",
           200: "#CCC",
+          300: "#333333",
         },
         "custom-red": {
           100: "#EB5757",
+        },
+        "custom-bg": {
+          100: "#e4defb",
         },
       },
       fontFamily: {
